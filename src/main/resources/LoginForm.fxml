@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Войдите в учетную запись">
+                     <font>
+                        <Font name="Verdana Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets>
+                           <top>50</top>
+                           <bottom>10</bottom>
+                        </Insets>
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Email">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     </Label>
+                  <TextField fx:id="loginField" style="-fx-max-width: 200;" />
+                  <Label text="Пароль">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <PasswordField fx:id="passField" style="-fx-max-width: 200;" />
+                  <Button defaultButton="true" mnemonicParsing="false" onAction="#Login_Button" text="Войти">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets>
+                           <top>10</top>
+                        </Insets>
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-max-height: 40; -fx-padding: 10;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#Registr_Button" text="Зарегистрироваться" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

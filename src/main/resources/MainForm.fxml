@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="root" prefHeight="800" prefWidth="1200" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <BorderPane>
+        <center>
+            <TabPane fx:id="tabPane" style="-fx-tab-min-width: 200; -fx-tab-min-height: 50;" />
+        </center>
+      <top>
+            <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 15; -fx-background-color: #03395B; -fx-border-color: grey; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+                <Button onAction="#PKK_Button" style="-fx-min-width: 200;" text="ПКК">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Nakarte_Button" style="-fx-min-width: 200;" text="Nakarte.me">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+                <Region HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#History_Button" text="История">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#About_Button" text="Об авторе">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginLabel" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            </HBox>
+      </top>
+      <bottom>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-max-height: 60; -fx-background-color: #03395B;" BorderPane.alignment="CENTER">
+            <children>
+               <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Exit_Button" text="Выход">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+            </children>
+         </HBox>
+      </bottom>
+    </BorderPane>
+</StackPane>
